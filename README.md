@@ -1,61 +1,60 @@
-# Movie-Recommendation-System
+#  Fake News Classification using Machine Learning
 
-### Project Title:  
-**Movie Recommendation System**
+This internship project detects whether a news article is **Fake** or **Real** using machine learning and natural language processing (NLP). A trained Naive Bayes model is deployed through a Streamlit web app for real-time prediction.
 
----
+## Project Details
 
-### Objective:  
-The objective of this project is to build an intelligent movie recommendation system that suggests movies to users based on their preferences. The system uses machine learning techniques to analyze user behavior and movie content, providing personalized and relevant movie suggestions.
+- **Student Name:** Bharath  
+- **Semester:** 5th Semester, B.Tech  
+- **Project Title:** News Article Classification (Fake/Real)  
+- **Internship Task:** Full ML pipeline + web interface
 
----
+##  Tools and Technologies
 
-### Tools & Technologies Used:
-- **Programming Language:** Python  
-- **Libraries:** Pandas, Scikit-learn (Sklearn), Streamlit  
-- **Dataset:** MovieLens dataset (commonly used for recommendation systems)
+- Python, Jupyter Notebook
+- Pandas, Numpy, Scikit-learn, NLTK
+- TF-IDF for feature extraction
+- Naive Bayes classifier
+- Joblib for saving model
+- Streamlit for UI
 
----
+##  Files in This Repository
 
-### Approach & Methodology:
+| File | Description |
+|------|-------------|
+| `NewsClassification.ipynb` | Jupyter notebook for cleaning, training, and evaluating the model |
+| `model.pkl` | Trained Naive Bayes model |
+| `tfidf.pkl` | TF-IDF vectorizer |
+| `app.py` | Streamlit app code for real-time prediction |
+| `report.pdf` | Final project report |
+| `README.md` | Project documentation (this file) |
 
-#### 1. Data Collection and Preprocessing:  
-The MovieLens dataset is used, which contains user ratings for various movies along with movie metadata (e.g., genres, titles). The data is cleaned, structured, and prepared for modeling.
+##  Dataset Source
 
-#### 2. Collaborative Filtering Model:  
-A collaborative filtering approach is used to recommend movies by identifying patterns in user-item interactions (ratings). This method leverages user similarities or item similarities to suggest movies that similar users have enjoyed.
+This project uses the following dataset from Kaggle:
 
-#### 3. Content-Based Filtering:  
-To improve recommendations, a content-based filtering component is integrated. This considers movie attributes like genres and compares them to the user’s past preferences to recommend similar movies.
+🔗 [Fake and Real News Dataset – Kaggle](https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset)
 
-#### 4. User Interface with Streamlit:  
-A simple and interactive UI is developed using Streamlit. Users can input their favorite movies or rate a few movies, and the system returns the top 5 personalized movie recommendations.
+> ⚠️ **Note:**  
+> The original CSV files (`Fake.csv`, `True.csv`) are **NOT included** in this repository due to GitHub's 25MB file size limit.  
+> To run the notebook or app, download these files from the link above and place them in the project folder.
 
-#### 5. Optional Sentiment Filtering:  
-Optionally, user reviews (if available) can be analyzed using sentiment analysis to further filter or adjust the recommendations based on public opinion about the movies.
+##  How to Run the Streamlit App
 
----
+1. Install Streamlit (if not already installed):
+   `pip install streamlit`
+2. Run the app:
+   `streamlit run app.py`
+3. Paste any news article and click "Classify" to see whether it’s fake or real.
 
-### Deployment Steps:
+## Project Output
 
-1. Store all the data and code files in a single folder.  
-2. Inside this folder, create a Python file named **`app.py`** containing the Streamlit app code.  
-3. Open a terminal or command prompt.  
-4. Navigate to the project folder using the `cd` command.  
-5. Run the following command to start the app:
-   ```
-   streamlit run app.py
-   ```
-6. The browser will open and display the output of your movie recommendation system.
+- Trained model classifies fake vs. real news with high accuracy
+- Streamlit app allows easy, real-time text input and predictions
+- Final report summarizes the full pipeline, results, and learning
 
----
+## Author
 
-### Deliverables:
-- Python Jupyter Notebook with model code and analysis  
-- Streamlit-based Web App for user interaction  
-- Final recommendation logic combining collaborative and content-based models
-
----
-
-### Outcome:
-The system effectively provides personalized movie recommendations by combining collaborative and content-based techniques, enhancing user experience and relevance. This project demonstrates the practical use of machine learning in entertainment platforms.
+**Bharath**  
+5th Semester, B.Tech  
+Fake News Detection Internship Project
